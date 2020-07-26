@@ -1,0 +1,33 @@
+---
+- hosts: all
+  become: yes
+  gather_facts: no
+  tasks:
+    - name: enable vi mode to vagrant user
+      lineinfile:
+        path: /home/vagrant/.bashrc
+        line: set -o vi
+
+    - name: install python3, docker-engine, git
+      yum:
+        name:
+          - python3
+          - docker-engine
+          - git
+        state: present
+
+    - name: create docker group
+      group:
+        name: docker
+
+    - name: add vagrant user to docker group
+      user:
+        groups: docker
+        append: yes
+        name: vagrant
+
+    - name: enable docker daemon
+      systemd:
+        name: docker
+        state: started
+        enabled: yes
