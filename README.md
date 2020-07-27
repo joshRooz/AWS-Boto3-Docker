@@ -1,8 +1,7 @@
 # AWS-Boto3-Docker
-Base Docker image for AWS Python SDK
+Simple base Docker image for AWS Python SDK running the latest python3:slim version
 
 ***
-## Requirements
-1. Auto-build from latest python-3:slim image
-2. Auto-build Boto3 from develop branch
-3. Docker image built on DockerHub
+## Behaviour
+1. Docker Hub auto-build triggered when python-3:slim image is updated
+2. Daily GitHub Action build to incorporate latest pypi release of boto3 
