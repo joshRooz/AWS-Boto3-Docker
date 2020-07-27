@@ -1,0 +1,17 @@
+# This is a simple workflow to trigger a build each week, cloning the latest development branch commits to AWS Boto3
+
+name: Weekly Build
+
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 14 * * 0'
+        
+jobs:
+  trigger-build:
+    runs-on: ubuntu-latest
+    steps:       
+    # cURL is part of the software already included on the runner
+    # https://docs.github.com/en/actions/reference/software-installed-on-github-hosted-runners
+    - name: POST Request
+      run: curl --location --request POST  "${{ secrets.trigger_url }}"
