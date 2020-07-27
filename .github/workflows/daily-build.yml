@@ -1,11 +1,11 @@
-# This is a simple workflow to trigger a build each week, cloning the latest development branch commits to AWS Boto3
+# This is a simple workflow to trigger a build daily, using the latest pypi boto3 version 
 
-name: Weekly Build
+name: Daily Build
 
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 14 * * 0'
+    - cron:  '0 14 * * *'
         
 jobs:
   trigger-build:

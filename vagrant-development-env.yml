@@ -31,3 +31,12 @@
         name: docker
         state: started
         enabled: yes
+
+    - name: clone aws-boto3-docker repo
+      git:
+        repo: 'https://github.com/joshRooz/AWS-Boto3-Docker.git'
+        dest: /home/vagrant
+
+    - name: configure git email and user info
+      command: git config --global user.email "54345520+joshRooz@users.noreply.github.com"
+    - command: git config --global user.name "Josh Roose"
