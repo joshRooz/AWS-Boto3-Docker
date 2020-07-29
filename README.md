@@ -1,3 +1,5 @@
+![Daily Build](https://github.com/joshRooz/AWS-Boto3-Docker/workflows/Daily%20Build/badge.svg)
+
 # AWS-Boto3-Docker
 Simple base Docker image for AWS Python SDK running the latest python3:slim version
 
