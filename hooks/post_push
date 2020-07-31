@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Collecting latest build's version matrix!"
-boto3=$(docker run -ti joshrooz/aws-boto3-sdk  pip show boto3 | grep Version | awk -F\   '{print $NF}')
-python=$(docker run -ti joshrooz/aws-boto3-sdk python --version | awk -F\  '{print $NF}')
+boto3=$(docker run joshrooz/aws-boto3-sdk  pip show boto3 | grep Version | awk -F\   '{print $NF}')
+python=$(docker run joshrooz/aws-boto3-sdk python --version | awk -F\  '{print $NF}')
 
 echo "boto3: ${boto3}"
 echo "python: ${python}"
