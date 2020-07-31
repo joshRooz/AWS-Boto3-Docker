@@ -12,6 +12,7 @@
       yum:
         name:
           - python3
+          - pip3
           - docker-engine
           - git
         state: present
@@ -35,7 +36,7 @@
     - name: clone aws-boto3-docker repo
       git:
         repo: 'https://github.com/joshRooz/AWS-Boto3-Docker.git'
-        dest: /home/vagrant
+        dest: /home/vagrant/aws-boto3-docker
 
     - name: configure git email and user info
       command: git config --global user.email "54345520+joshRooz@users.noreply.github.com"
