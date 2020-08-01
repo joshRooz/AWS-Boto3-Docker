@@ -11,4 +11,4 @@ curl -v \
   -H "Accept: application/vnd.github.v3+json" \
   -H "Authorization: token $GITHUB_REPO_TOKEN" \
   https://api.github.com/repos/joshrooz/aws-boto3-docker/dispatches \
-  -d '{"event_type":"post-push", "client_payload": { "boto3-version": "$boto3", "python-version": "$python" } }'
+  -d "{\"event_type\":\"post-push\", \"client_payload\": { \"boto3-version\": \"$boto3\", \"python-version\": \"$python\" } }"
