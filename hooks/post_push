@@ -9,6 +9,6 @@ echo "python: $python"
 curl -v \
   -X POST \
   -H "Accept: application/vnd.github.v3+json" \
-  -H "Authorization: token $GITHUB_TOKEN" \
+  -H "Authorization: token $GITHUB_REPO_TOKEN" \
   https://api.github.com/repos/joshrooz/aws-boto3-docker/dispatches \
-  -d '{"event_type":"post-push", "client_payload": { "boto3": "$boto3", "python": "$python" } }'
+  -d '{"event_type":"post-push", "client_payload": { "boto3-version": "$boto3", "python-version": "$python" } }'
