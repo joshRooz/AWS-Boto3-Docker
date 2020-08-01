@@ -6,10 +6,7 @@ python=$(docker run --rm joshrooz/aws-boto3-sdk python --version | awk -F\  '{pr
 echo "boto3: $boto3"
 echo "python: $python"
 
-GITHUB_TOKEN=0e356f1c83c23d921f903701f741273693957d7b
-echo "Token: $GITHUB_TOKEN"
-
-curl \
+curl -v \
   -X POST \
   -H "Accept: application/vnd.github.v3+json" \
   -H "Authorization: token $GITHUB_TOKEN" \
