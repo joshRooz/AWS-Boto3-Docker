@@ -26,5 +26,3 @@ jobs:
           git add ./README.md
           git commit -m "update versions"
           git push
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
