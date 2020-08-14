@@ -1,5 +1,5 @@
 ![Daily Build](https://github.com/joshRooz/AWS-Boto3-Docker/workflows/Daily%20Build/badge.svg)
-[![Boto3](https://img.shields.io/badge/boto3-1.14.41-informational.svg)](https://pypi.org/project/boto3/)
+[![Boto3](https://img.shields.io/badge/boto3-1.14.42-informational.svg)](https://pypi.org/project/boto3/)
 [![Python](https://img.shields.io/badge/python-3.8.5-informational.svg)](https://hub.docker.com/_/python)
 
 # AWS-Boto3-Docker
