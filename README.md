@@ -1,6 +1,6 @@
 ![Daily Build](https://github.com/joshRooz/AWS-Boto3-Docker/workflows/Daily%20Build/badge.svg)
-[![Boto3](https://img.shields.io/badge/boto3-1.17.11-informational.svg)](https://pypi.org/project/boto3/)
-[![Python](https://img.shields.io/badge/python-3.9.1-informational.svg)](https://hub.docker.com/_/python)
+[![Boto3](https://img.shields.io/badge/boto3-1.17.12-informational.svg)](https://pypi.org/project/boto3/)
+[![Python](https://img.shields.io/badge/python-3.9.2-informational.svg)](https://hub.docker.com/_/python)
 
 # AWS-Boto3-Docker
 Simple base Docker image that installs the most recent AWS Python SDK (boto3) from pypi on the latest python3:slim container
